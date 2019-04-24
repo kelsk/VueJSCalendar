@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="scripts/vuejscalendar.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/vuejscalendar.css">
+</head>
+<body>
+<div id="app">
+    <calendar>
+        <script type="text/x-template" id="calendar-template">
+        <div>
+            <table id="calendar">
+                <tr>
+                    <th colspan="7" class="month-name">
+                        {{ currentMonth }}
+                    </th>
+                </tr>
+                <tr>
+                    <td v-for="day in days">
+                    {{ day }}
+                    </td>
+                </tr>
+                <tr v-for="week in weeks"
+                class="week">
+                    <td
+                    class="day"
+                    v-for="date in week">
+                        {{ date }}
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        </script>
+                
+    </calendar>
+</div>
+
+</body>
+</html>
