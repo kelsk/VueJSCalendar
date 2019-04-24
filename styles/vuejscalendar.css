@@ -1,0 +1,23 @@
+    p {
+        display: inline-block;
+        width: 30px;
+    }
+    .week {
+        background-color: lightblue;
+        height: 20px;
+        width: 20px;
+    }
+    .day {
+        background-color: lightgreen;
+        border: 1px solid white;
+        margin: 0;
+        text-align: center;
+    }
+    .month-name {
+        background-image: linear-gradient(lightgreen, lightblue);
+        width: 100%;
+    }
+    td {
+        height: 30px;
+        width: 30px;
+    }
